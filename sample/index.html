@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+    <title>Home - Ohio State University Libraries</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+   
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../jquery.unobtrusive-aria.js"></script>
+    <script type="text/javascript" src="osul-aria.js"></script>
+    <style type="text/css">
+    small {
+        font-size: 18px;
+    }
+    </style>
+</head>
+
+<body>
+    
+   <h1>Unobtrusive ARIA sample <small>See <a href="http://library.osu.edu/">OSU Libraries Home Page</a> for full example.</small></h1>
+    <div id="osulNavigationContainer">
+        <div class="container">
+            <div class="span-24">
+                <div id="navigation" class="tracker" ref="nav">
+                    <ul class="sf-menu sf-navbar">
+
+                        <li class="current">
+                            <a href="/"><span>Home</span></a>
+                            
+                        </li>
+
+                        <li class="link">
+                            <a href="/find/"><span>Find</span></a>
+                            <ul class="sub">
+
+
+                                <li class="link levelb"><a href="/find/catalogs/"><span>Catalogs</span></a></li>
+
+                                <li class="link levelb"><a href="/find/databases/"><span>Databases</span></a></li>
+
+                                <li class="link levelb"><a href="/find/subject-listings/"><span>Subjects</span></a></li>
+
+                                <li class="link levelb"><a href="/find/circulation-services/circulation-faq/"><span>Circulation Services</span></a></li>
+
+                                <li class="link levelb"><a href="/find/course-reserves/"><span>Course Reserves</span></a></li>
+
+                                <li class="link levelb"><a href="/find/interlibrary-services/"><span>Interlibrary Services</span></a></li>
+
+                                <li class="link levelb"><a href="/find/collections/"><span>Collections</span></a></li>
+
+                                <li class="link levelb"><a href="/find/librarians/"><span>Librarians</span></a></li>
+
+                                <li class="link levelb"><a href="/find/library-study-meeting-rooms/"><span>Rooms</span></a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="link">
+                            <a href="/help/"><span>Help</span></a>
+                            <ul class="sub">
+
+
+                                <li class="link levelb"><a href="/help/help-with-tools/"><span>Help With Tools </span></a></li>
+
+                                <li class="link levelb"><a href="/help/resource-guides/"><span>Resource Guides</span></a></li>
+
+                                <li class="link levelb"><a href="/help/research-strategies/"><span>Research Strategies</span></a></li>
+
+                                <li class="link levelb"><a href="/help/instructional-services/"><span>Instructional Services</span></a></li>
+
+                                <li class="link levelb"><a href="http://libanswers.osu.edu/"><span>Ask Us</span></a></li>
+
+                                <li class="link levelb"><a href="/help/infolit-toolkit/"><span>InfoLit Toolkit</span></a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="link">
+                            <a href="/news/"><span>News &amp; Events</span></a>
+                            <ul class="sub">
+
+
+                                <li class="link levelb"><a href="/news/newsletter/"><span>Newsletter</span></a></li>
+
+                                <li class="link levelb"><a href="/news/events-and-exhibits/"><span>Events and Exhibits</span></a></li>
+
+                                <li class="link levelb"><a href="/news/grants-awards/"><span>Grants &amp; Awards</span></a></li>
+
+                                <li class="link levelb"><a href="/news/blogs/"><span>Blogs</span></a></li>
+
+                                <li class="link levelb"><a href="/news/outreach-programs/"><span>Outreach Programs</span></a></li>
+
+                                <li class="link levelb"><a href="/news/readaloud/"><span>ReadAloud  </span></a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="link">
+                            <a href="/projects-initiatives/"><span>Projects &amp; Initiatives</span></a>
+                            <ul class="sub">
+
+
+                                <li class="link levelb"><a href="/projects-initiatives/exhibits/"><span>Exhibits</span></a></li>
+
+                                <li class="link levelb"><a href="/projects-initiatives/knowledge-bank/"><span>Knowledge Bank Center</span></a></li>
+
+                                <li class="link levelb"><a href="/projects-initiatives/digital-projects/"><span>Digital Projects</span></a></li>
+
+                                <li class="link levelb"><a href="/projects-initiatives/special-collections/"><span>Special Collections</span></a></li>
+
+                                <li class="link levelb"><a href="/projects-initiatives/copyright-resources-center/"><span>Copyright Resources</span></a></li>
+
+                                <li class="link levelb"><a href="/projects-initiatives/osu-records-management/"><span>OSU Records Management</span></a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="link">
+                            <a href="/about/"><span>About Us</span></a>
+                            <ul class="sub">
+
+
+                                <li class="link levelb"><a href="/about/administration/"><span>Administration</span></a></li>
+
+                                <li class="link levelb"><a href="/about/committees/"><span>Committees</span></a></li>
+
+                                <li class="link levelb"><a href="/about/contact-us/"><span>Contact Us</span></a></li>
+
+                                <li class="link levelb"><a href="/about/departments/"><span>Departments</span></a></li>
+
+                                <li class="link levelb"><a href="/about/jobs/"><span>Jobs</span></a></li>
+
+                                <li class="link levelb"><a href="/about/locations/"><span>Locations</span></a></li>
+
+                                <li class="link levelb"><a href="/about/map/"><span>Map</span></a></li>
+
+                                <li class="link levelb"><a href="/about/partners/"><span>Partners</span></a></li>
+
+                                <li class="link levelb"><a href="/about/policies-procedures/"><span>Policies &amp; Procedures</span></a></li>
+
+                                <li class="link levelb"><a href="/about/departments/assessment/data-portal/"><span>Data</span></a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="link">
+                            <a href="/account/"><span>My Account</span></a>
+                            <ul class="sub">
+
+                                <li class="link levelb"><a href="/account/student-services/"><span>Student Services</span></a></li>
+
+                                <li class="link levelb"><a href="/account/faculty-services/"><span>Faculty Services</span></a></li>
+
+                                <li class="link levelb"><a href="/account/alumni-friends-services/"><span>Alumni &amp; Friends Services</span></a></li>
+
+                                <li class="link levelb"><a href="/account/my-library-account/"><span>My Library Account</span></a></li>
+
+                                <li class="link levelb"><a href="/account/my-settings/"><span>My Settings</span></a></li>
+
+                                <li class="link levelb"><a href="/account/pay-fines/"><span>Pay Fines</span></a></li>
+
+                                <li class="link levelb"><a href="http://proxy.lib.ohio-state.edu/login?url=http://library.osu.edu/"><span>Off-Campus Sign In</span></a></li>
+
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
